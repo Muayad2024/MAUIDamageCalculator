@@ -16,6 +16,8 @@
         {
             swordDamage.Roll = Random.Shared.Next(1, 7) + Random.Shared.Next(1, 7)
                 + Random.Shared.Next(1, 7);
+            swordDamage.SetFlaming(Flaming.IsChecked);
+            swordDamage.SetMagic(Magic.IsChecked);
             DisplayDamage();
         }
 
