@@ -16,7 +16,8 @@
         {
             swordDamage.Roll = Random.Shared.Next(1, 7) + Random.Shared.Next(1, 7)
                 + Random.Shared.Next(1, 7);
-            swordDamage.SetFlaming(Flaming.IsChecked);
+            
+            swordDamage.SetFlaming(Flaming.IsChecked);   //it will add value that it was not originally in the method 
             swordDamage.SetMagic(Magic.IsChecked);
             DisplayDamage();
         }
